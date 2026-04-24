@@ -1,0 +1,168 @@
+/* Header styles for form page */
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 16px 48px;
+   background-color: rgba(255, 255, 255, 0.9);
+   backdrop-filter: blur(12px);
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+   position: sticky;
+   top: 0;
+   z-index: 10;
+}
+
+.logo {
+   font-size: 24px;
+   font-weight: 800;
+   color: var(--text-primary);
+   text-decoration: none;
+   letter-spacing: -0.5px;
+}
+
+.logo span {
+   color: var(--primary-color);
+}
+
+.nav-link {
+   text-decoration: none;
+   color: var(--text-secondary);
+   font-weight: 500;
+   transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+   color: var(--primary-color);
+}
+
+/* Form Main Layout */
+.form-page {
+   background-color: #f9fafb;
+}
+
+.form-main {
+   max-width: 800px;
+   margin: 60px auto;
+   padding: 0 24px;
+}
+
+.form-container {
+   background-color: var(--surface-color);
+   padding: 40px;
+   border-radius: 16px;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+}
+
+.page-title {
+   font-size: 32px;
+   font-weight: 700;
+   color: var(--text-primary);
+   margin-bottom: 8px;
+   text-align: center;
+}
+
+.subtitle {
+   color: var(--text-secondary);
+   font-size: 15px;
+   margin-bottom: 32px;
+   text-align: center;
+}
+
+/* Article Form Styles */
+.article-form {
+   display: flex;
+   flex-direction: column;
+   gap: 24px;
+}
+
+.input-group {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+}
+
+.input-group label {
+   font-size: 14px;
+   font-weight: 600;
+   color: var(--text-primary);
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"],
+.input-group textarea {
+   padding: 14px 16px;
+   border: 1px solid var(--border-color);
+   border-radius: 8px;
+   font-size: 15px;
+   background-color: var(--input-bg);
+   transition: all 0.2s ease;
+   font-family: inherit;
+   color: var(--text-primary);
+}
+
+.input-group textarea {
+   resize: vertical;
+   line-height: 1.6;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+   outline: none;
+   border-color: var(--primary-color);
+   box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+   background-color: var(--surface-color);
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+   color: #9ca3af;
+}
+
+.form-actions-row {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 16px;
+   margin-top: 16px;
+   padding-top: 24px;
+   border-top: 1px solid var(--border-color);
+}
+
+.btn-primary {
+   display: inline-block;
+   background-color: var(--primary-color);
+   color: white;
+   padding: 12px 28px;
+   border: none;
+   border-radius: 8px;
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.2s ease;
+   font-family: inherit;
+}
+
+.btn-primary:hover {
+   background-color: var(--primary-hover);
+   transform: translateY(-2px);
+   box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+}
+
+.btn-secondary {
+   background-color: transparent;
+   color: var(--text-secondary);
+   padding: 12px 24px;
+   border: none;
+   border-radius: 8px;
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+   background-color: var(--background-end);
+   color: var(--text-primary);
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Dashboard - Personal Blog</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="../assets/css/style.css" />
+      <link rel="stylesheet" href="../assets/css/dashboard.css" />
+   </head>
+   <body class="dashboard-page">
+      <header class="header">
+         <a href="../index.html" class="logo">My<span>Blog</span></a>
+         <nav class="header-nav">
+            <a href="article-create.html" class="btn-primary">Create Article</a>
+         </nav>
+      </header>
+
+      <main class="dashboard-main">
+         <div class="dashboard-header">
+            <h1 class="page-title">Manage Articles</h1>
+         </div>
+
+         <div class="table-container">
+            <table class="article-table">
+               <thead>
+                  <tr>
+                     <th>Title</th>
+                     <th>Date</th>
+                     <th>Status</th>
+                     <th class="actions-col">Actions</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td><a href="#">The Future of Web Development</a></td>
+                     <td>April 23, 2026</td>
+                     <td><span class="status-badge published">Published</span></td>
+                     <td class="actions-cell">
+                        <a href="article-edit.html" class="btn-icon edit">Edit</a>
+                        <button class="btn-icon delete">Delete</button>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">My Journey into CSS Art</a></td>
+                     <td>April 15, 2026</td>
+                     <td><span class="status-badge published">Published</span></td>
+                     <td class="actions-cell">
+                        <a href="article-edit.html" class="btn-icon edit">Edit</a>
+                        <button class="btn-icon delete">Delete</button>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td><a href="#">Building a Personal Blog from Scratch</a></td>
+                     <td>April 02, 2026</td>
+                     <td><span class="status-badge draft">Draft</span></td>
+                     <td class="actions-cell">
+                        <a href="article-edit.html" class="btn-icon edit">Edit</a>
+                        <button class="btn-icon delete">Delete</button>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </main>
+   </body>
+</html>

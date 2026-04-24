@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Login - Personal Blog</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="../assets/css/style.css" />
+   </head>
+   <body class="login-page">
+      <div class="login-container">
+         <div class="login-box">
+            <h1>Welcome Back</h1>
+            <p class="subtitle">Please enter your details to sign in.</p>
+            <form action="/login" method="post" class="login-form">
+               <div class="input-group">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" name="username" placeholder="Enter your username" required />
+               </div>
+               <div class="input-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" placeholder="Enter your password" required />
+               </div>
+               <div class="form-actions">
+                  <label class="remember-me"> <input type="checkbox" name="remember" /> Remember me </label>
+                  <a href="#" class="forgot-password">Forgot password?</a>
+               </div>
+               <button type="submit" class="login-button">Sign In</button>
+            </form>
+            <p class="signup-prompt">Don't have an account? <a href="#">Sign up</a></p>
+         </div>
+      </div>
+
+      <!-- <script src="../assets/js/app.js"></script> -->
+   </body>
+</html>

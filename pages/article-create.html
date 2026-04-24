@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Create Article - Personal Blog</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="../assets/css/style.css" />
+      <link rel="stylesheet" href="../assets/css/article-form.css" />
+   </head>
+   <body class="form-page">
+      <header class="header">
+         <a href="../index.html" class="logo">My<span>Blog</span></a>
+         <nav class="header-nav">
+            <a href="dashboard.html" class="nav-link">Back to Dashboard</a>
+         </nav>
+      </header>
+
+      <main class="form-main">
+         <div class="form-container">
+            <h1 class="page-title">Create New Article</h1>
+            <p class="subtitle">Fill out the details below to publish a new post.</p>
+            
+            <form action="/submit-article" method="post" class="article-form">
+               <div class="input-group">
+                  <label for="title">Article Title</label>
+                  <input type="text" id="title" name="title" placeholder="Enter an engaging title" required />
+               </div>
+               
+               <div class="input-group">
+                  <label for="publish_date">Publishing Date</label>
+                  <input type="date" id="publish_date" name="publish_date" required />
+               </div>
+               
+               <div class="input-group">
+                  <label for="content">Article Content</label>
+                  <textarea id="content" name="content" rows="12" placeholder="Write your article content here..." required></textarea>
+               </div>
+               
+               <div class="form-actions-row">
+                  <a href="dashboard.html" class="btn-secondary">Cancel</a>
+                  <button type="submit" class="btn-primary">Publish Article</button>
+               </div>
+            </form>
+         </div>
+      </main>
+   </body>
+</html>
