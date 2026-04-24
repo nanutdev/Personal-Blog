@@ -1,17 +1,5 @@
 [
    {
-      "id": "12345",
-      "username": "john_doe",
-      "password": "password123",
-      "createdAt": "2023-04-01T00:00:00Z"
-   },
-   {
-      "id": "12345",
-      "username": "john_doe",
-      "password": "password123",
-      "createdAt": "2023-04-01T00:00:00Z"
-   },
-   {
       "id": "12346",
       "username": "nanut",
       "password": "nanut0123",
@@ -28,5 +16,23 @@
       "username": "hallo",
       "password": "admin",
       "createdAt": "2026-04-24T07:04:43.799Z"
+   },
+   {
+      "id": 1777038533159,
+      "username": "farhan",
+      "password": "farhan",
+      "createdAt": "2026-04-24T13:48:53.159Z"
+   },
+   {
+      "id": 1777038654869,
+      "username": "dolo",
+      "password": "dolo",
+      "createdAt": "2026-04-24T13:50:54.869Z"
+   },
+   {
+      "id": 1777038842011,
+      "username": "lands",
+      "password": "lands",
+      "createdAt": "2026-04-24T13:54:02.011Z"
    }
 ]

@@ -9,9 +9,10 @@ const port = 3000;
 app.use(cors());
 app.use(express.json()); // middleware to parse json
 
+// register api
 app.post('/api/register', async (req, res) => {
    // get data user from body
-   const { id, username, password, createdAt } = req.body;
+   const { id, username, password, createdAt } = req.body || {};
 
    // validate user
    const dataUser = await readUser();
@@ -24,7 +25,24 @@ app.post('/api/register', async (req, res) => {
 
    const addUser = await createUser(id, username, password, createdAt);
 
-   res.status(201).json({ message: 'User created', user: req.body });
+   return res.status(201).json({ message: 'User created', user: req.body });
+});
+
+// login api
+app.post('/api/login', async (req, res) => {
+   // get data from body request
+   const { username, password } = req.body || {};
+
+   // validate data user
+   const getUser = await readUser();
+   const user = getUser.find((u) => u.username === username);
+
+   // check user and password
+   if (!user || user.password !== password) {
+      return res.status(401).json({ message: 'Invalid Credentials, check again username and password!' });
+   }
+
+   return res.status(200).json({ message: 'Login successfully!', user: { username: user.username } });
 });
 
 app.listen(port, () => {

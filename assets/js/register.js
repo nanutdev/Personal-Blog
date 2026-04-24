@@ -21,16 +21,28 @@ async function createUser() {
          throw new Error(`Http error! Status: ${res.status}`);
       }
 
-      console.log(res);
-
-      return await res.json();
+      return {
+         ok: true,
+         status: res.message,
+      };
    } catch (error) {
-      return res.status(409).json({ error: 'Conflict: data already exist in system' });
+      return {
+         ok: false,
+         status: error.message,
+      };
    }
 }
 
 const register = document.getElementById('register-form');
-register.addEventListener('submit', (e) => {
+register.addEventListener('submit', async (e) => {
    e.preventDefault();
-   createUser();
+   const addUser = await createUser();
+
+   if (addUser.ok) {
+      alert('User created successfully');
+      window.location.href = './login.html';
+   }
+
+   alert('Failed to create user, make sure username is unique');
+   return;
 });
