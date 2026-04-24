@@ -1,0 +1,32 @@
+[
+   {
+      "id": "12345",
+      "username": "john_doe",
+      "password": "password123",
+      "createdAt": "2023-04-01T00:00:00Z"
+   },
+   {
+      "id": "12345",
+      "username": "john_doe",
+      "password": "password123",
+      "createdAt": "2023-04-01T00:00:00Z"
+   },
+   {
+      "id": "12346",
+      "username": "nanut",
+      "password": "nanut0123",
+      "createdAt": "2023-05-01T00:00:00Z"
+   },
+   {
+      "id": 1777013930621,
+      "username": "nanutdev",
+      "password": "sudosu",
+      "createdAt": "2026-04-24T06:58:50.621Z"
+   },
+   {
+      "id": 1777014283799,
+      "username": "hallo",
+      "password": "admin",
+      "createdAt": "2026-04-24T07:04:43.799Z"
+   }
+]

@@ -13,3 +13,7 @@
 03 Data Information
 -> users : id, username, password
 -> articles : id, title, content, author, createdAt, updatedAt
+
+04 Basics Authentication
+-> username, password
+-> register, login, logout, me

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Sign Up - Personal Blog</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="../assets/css/style.css" />
+      <link rel="stylesheet" href="../assets/css/signup.css" />
+   </head>
+   <body class="signup-page">
+      <div class="signup-container">
+         <div class="signup-box">
+            <h1>Create an Account</h1>
+            <p class="subtitle">Join our community and start writing.</p>
+            <form action="/register" method="post" class="signup-form" id="register-form">
+               <div class="input-group">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" name="username" placeholder="Choose a username" required />
+               </div>
+               <div class="input-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" placeholder="Create a password" required />
+               </div>
+               <div class="input-group">
+                  <label for="confirm_password">Confirm Password</label>
+                  <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required />
+               </div>
+               <button type="submit" class="signup-button">Sign Up</button>
+            </form>
+            <p class="login-prompt">Already have an account? <a href="login.html">Log in</a></p>
+         </div>
+      </div>
+
+      <script src="../assets/js/register.js"></script>
+   </body>
+</html>

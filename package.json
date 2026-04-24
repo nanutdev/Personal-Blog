@@ -1,0 +1,23 @@
+{
+   "name": "02_personal_blog",
+   "version": "1.0.0",
+   "description": "https://roadmap.sh/projects/personal-blog",
+   "main": "index.js",
+   "type": "module",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "nodemon ./assets/js/server.js"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git@github.com-second:nanutdev/Personal-Blog.git"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "base-64": "^1.0.0",
+      "cors": "^2.8.6",
+      "express": "^5.2.1"
+   }
+}
