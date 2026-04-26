@@ -6,7 +6,7 @@
    "type": "module",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "nodemon ./assets/js/server.js"
+      "dev": "nodemon ./assets/js/server.js"
    },
    "repository": {
       "type": "git",

@@ -89,6 +89,7 @@
 
 .input-group input[type="text"],
 .input-group input[type="date"],
+.input-group select,
 .input-group textarea {
    padding: 14px 16px;
    border: 1px solid var(--border-color);
@@ -106,6 +107,7 @@
 }
 
 .input-group input:focus,
+.input-group select:focus,
 .input-group textarea:focus {
    outline: none;
    border-color: var(--primary-color);

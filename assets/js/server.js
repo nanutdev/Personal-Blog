@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 
 import { readUser, createUser } from './users.js';
+import { addArticle, readArticles } from './articles.js';
 
 const app = express();
 const port = 3000;
@@ -43,6 +44,25 @@ app.post('/api/login', async (req, res) => {
    }
 
    return res.status(200).json({ message: 'Login successfully!', user: { username: user.username } });
+});
+
+// create article api
+app.post('/api/create', async (req, res) => {
+   // get data
+   const { title, content, publish, status } = req.body || {};
+
+   const newArticle = {
+      id: Date.now(),
+      title: title,
+      content: content,
+      publishDate: publish,
+      status: status || 'Draft',
+      createdAt: new Date().toISOString(),
+   };
+
+   const postArticle = await addArticle(newArticle);
+
+   return res.status(201).json({ message: 'Article created', article: req.body });
 });
 
 app.listen(port, () => {

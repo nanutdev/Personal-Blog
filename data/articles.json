@@ -1,0 +1,22 @@
+[
+  {
+    "id": 123,
+    "title": "Dev Web in 2026",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "publishDate": "2026-05-26"
+  },
+  {
+    "id": 1777214362271,
+    "title": "webdev",
+    "content": "web development project",
+    "publishDate": "2026",
+    "createdAt": "2026-04-26T14:39:22.271Z"
+  },
+  {
+    "id": 1777217072993,
+    "title": "Testing form",
+    "content": "testing form",
+    "publishDate": "2026-04-26",
+    "createdAt": "2026-04-26T15:24:32.993Z"
+  }
+]

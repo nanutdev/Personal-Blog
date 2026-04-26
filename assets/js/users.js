@@ -34,8 +34,8 @@ export const createUser = async (id, username, password, createdAt) => {
       database.push(newData);
 
       // write back to file
-      await fs.writeFile(pathFile, JSON.stringify(database, null, 3));
-      
+      await fs.writeFile(pathFile, JSON.stringify(database, null, 2));
+
       return newData;
    } catch (error) {
       console.error('Error while creating user: ', error);
