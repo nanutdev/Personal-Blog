@@ -16,7 +16,7 @@ export const readArticles = async () => {
    }
 };
 
-// create article
+// add article
 export const addArticle = async (data) => {
    try {
       const database = await readArticles();
@@ -32,4 +32,9 @@ export const addArticle = async (data) => {
       console.error('Error while adding data');
       throw error;
    }
+};
+
+export const editArticle = async (data) => {
+   await fs.writeFile(pathFile, JSON.stringify(data, null, 2));
+   return data;
 };

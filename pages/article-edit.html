@@ -22,16 +22,16 @@
          <div class="form-container">
             <h1 class="page-title">Edit Article</h1>
             <p class="subtitle">Update the details below to save your changes.</p>
-            
-            <form action="/update-article" method="post" class="article-form">
+
+            <form action="/update-article" method="post" class="article-form" id="article-form">
                <div class="input-group">
                   <label for="title">Article Title</label>
-                  <input type="text" id="title" name="title" value="The Future of Web Development" placeholder="Enter an engaging title" required />
+                  <input type="text" id="title" name="title" placeholder="Enter an engaging title" required />
                </div>
-               
+
                <div class="input-group">
                   <label for="publish_date">Publishing Date</label>
-                  <input type="date" id="publish_date" name="publish_date" value="2026-04-23" required />
+                  <input type="date" id="publish_date" name="publish_date" required />
                </div>
 
                <div class="input-group">
@@ -41,14 +41,12 @@
                      <option value="Published">Published</option>
                   </select>
                </div>
-               
+
                <div class="input-group">
                   <label for="content">Article Content</label>
-                  <textarea id="content" name="content" rows="12" placeholder="Write your article content here..." required>Exploring the latest trends in frontend frameworks and how they shape the way we build interactive user experiences.
-
-In this article, we'll dive deep into the new tools developers are using to ship products faster...</textarea>
+                  <textarea id="content" name="content" rows="12" placeholder="Write your article content here..." required></textarea>
                </div>
-               
+
                <div class="form-actions-row">
                   <a href="dashboard.html" class="btn-secondary">Cancel</a>
                   <button type="submit" class="btn-primary">Save Changes</button>
@@ -56,5 +54,7 @@ In this article, we'll dive deep into the new tools developers are using to ship
             </form>
          </div>
       </main>
+
+      <script src="../assets/js/edit_article.js"></script>
    </body>
 </html>

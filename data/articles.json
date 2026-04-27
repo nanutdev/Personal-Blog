@@ -1,22 +1,37 @@
 [
   {
     "id": 123,
-    "title": "Dev Web in 2026",
-    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    "publishDate": "2026-05-26"
+    "title": "Ai engineering 2026",
+    "content": "skill atrophy over time 2026",
+    "status": "Published",
+    "publishDate": "2026-04-30",
+    "createdAt": "2026-04-26T09:19:08.632Z",
+    "updatedAt": "2026-04-27T13:38:27.014Z"
   },
   {
-    "id": 1777214362271,
-    "title": "webdev",
-    "content": "web development project",
-    "publishDate": "2026",
-    "createdAt": "2026-04-26T14:39:22.271Z"
+    "id": 1777281548632,
+    "title": "Software engineering 2027",
+    "content": "engineers may still be obligated to use",
+    "publishDate": "2026-04-27",
+    "status": "Published",
+    "createdAt": "2026-04-27T09:19:08.632Z",
+    "updatedAt": "2026-04-27T13:37:16.870Z"
   },
   {
-    "id": 1777217072993,
-    "title": "Testing form",
-    "content": "testing form",
-    "publishDate": "2026-04-26",
-    "createdAt": "2026-04-26T15:24:32.993Z"
+    "id": 1777297203935,
+    "title": "So AI is making me Lazy...",
+    "content": "Some odd kind of lazy creeps in once AI code assistants enter the scene, worse than just grabbing stuff from Stack Overflow ever was. Pulling lines from an old forum post meant dropping ten at most into five hundred you’d built on your own. The bones were yours. The form stayed clear.",
+    "publishDate": "2026-04-28",
+    "status": "Draft",
+    "createdAt": "2026-04-27T13:40:03.935Z"
+  },
+  {
+    "id": 1777297290336,
+    "title": "The Awesome New Ubuntu 26.04 LTS",
+    "content": "Ubuntu 26.04 LTS 'Resolute Raccoon' has been released, powered by Linux kernel 7.0 with five years of standard support (extendable to 10 via Ubuntu Pro).",
+    "publishDate": "2026-04-27",
+    "status": "Draft",
+    "createdAt": "2026-04-27T13:41:30.336Z",
+    "updatedAt": "2026-04-27T13:41:55.468Z"
   }
 ]
