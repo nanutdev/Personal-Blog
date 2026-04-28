@@ -118,6 +118,28 @@ app.put('/api/articles/:id', async (req, res) => {
    return res.status(201).json({ status: 'success', message: 'Article updated', article: dataArticle[articleIndex] });
 });
 
+// deleted article
+app.delete('/api/articles/:id', async (req, res) => {
+   // get id params
+   const id = req.params.id;
+
+   // find data article
+   const data = await readArticles();
+   const dataIndex = data.findIndex((item) => String(item.id) === id);
+
+   // validate index and slice array
+   if (dataIndex !== -1) {
+      data.splice(dataIndex, 1);
+
+      // simpan ulang data
+      await editArticle(data);
+   } else {
+      return res.status(404).json({ status: 'Error', message: 'Data not found!', dataId: id });
+   }
+
+   return res.status(200).json({ status: 'success', message: 'Article successfully deleted permanently', dataId: id });
+});
+
 app.listen(port, () => {
    console.log(`Server is running on http://localhost:${port}`);
 });

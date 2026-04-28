@@ -1,14 +1,5 @@
 [
   {
-    "id": 123,
-    "title": "Ai engineering 2026",
-    "content": "skill atrophy over time 2026",
-    "status": "Published",
-    "publishDate": "2026-04-30",
-    "createdAt": "2026-04-26T09:19:08.632Z",
-    "updatedAt": "2026-04-27T13:38:27.014Z"
-  },
-  {
     "id": 1777281548632,
     "title": "Software engineering 2027",
     "content": "engineers may still be obligated to use",
@@ -22,8 +13,9 @@
     "title": "So AI is making me Lazy...",
     "content": "Some odd kind of lazy creeps in once AI code assistants enter the scene, worse than just grabbing stuff from Stack Overflow ever was. Pulling lines from an old forum post meant dropping ten at most into five hundred you’d built on your own. The bones were yours. The form stayed clear.",
     "publishDate": "2026-04-28",
-    "status": "Draft",
-    "createdAt": "2026-04-27T13:40:03.935Z"
+    "status": "Published",
+    "createdAt": "2026-04-27T13:40:03.935Z",
+    "updatedAt": "2026-04-28T11:13:31.875Z"
   },
   {
     "id": 1777297290336,
@@ -33,5 +25,21 @@
     "status": "Draft",
     "createdAt": "2026-04-27T13:41:30.336Z",
     "updatedAt": "2026-04-27T13:41:55.468Z"
+  },
+  {
+    "id": 1777370344870,
+    "title": "Google signs classified AI deal with the Pentagon",
+    "content": "Google has signed a classified AI deal with the US Department of Defense, permitting the Pentagon to use its AI models for 'any lawful government purpose' without the ethical restrictions that got Anthropic blacklisted in February 2026. ",
+    "publishDate": "2026-04-28",
+    "status": "Published",
+    "createdAt": "2026-04-28T09:59:04.870Z"
+  },
+  {
+    "id": 1777370387400,
+    "title": "A new way to fine-tune LLMs just dropped",
+    "content": "Evolution strategies, long considered unscalable for deep neural networks, are making a comeback in LLM fine-tuning. Two key papers are driving this revival: 'Evolution Strategies at Scale' (Sept 2025), which showed ES can fine-tune billion-parameter models using a population of just 30 models by exploiting the low intrinsic dimensionality of useful update directions; and 'EgRoL' (Nov 2025), which structures perturbations as LoRA updates to dramatically reduce compute costs. ",
+    "publishDate": "2026-04-22",
+    "status": "Published",
+    "createdAt": "2026-04-28T09:59:47.400Z"
   }
 ]
